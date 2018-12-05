@@ -1,0 +1,88 @@
+ul.dropdown {
+	cursor: pointer;
+}
+ul.dropdown li { position: relative; }
+ul.dropdown,
+ul.dropdown-inside {
+	list-style-type: none;
+	padding: 3px 0px 0px;
+}
+ul.dropdown-inside {
+	position: absolute;
+	left: -9999px;
+}
+ul.dropdown li,ul.dropdown-inside li{
+	padding: 3px 10px 4px;
+	display: block;
+	background: #a0a0ff;
+	float: left;
+	margin: 0 1px 0 0;
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+	display: block;
+	left: 0;
+}
+ul.dropdown li.dropdown-top .pressed {
+	display: block;
+	left: 0;	
+}
+
+ul.dropdown .dropdown-inside { background: #a0a0ff; }
+
+body {
+	background: #b0b0ff;
+}
+
+div.user_chat, div.single_post{
+	padding : 2%;
+}
+
+div.user_chat {
+	margin: 4% auto 0;
+	width: 46%;
+	min-width: 280px;
+	background:#e0e0ff;
+}
+
+[type="button"],form * {
+	background:#e0e0ff;
+	border-color:#000;
+	margin: 1% 0%;
+}
+[type="submit"], [type="button"] {
+	cursor: pointer;
+}
+
+textarea {
+	width: 100%;
+	resize:none;
+	background:#ffffff;
+}
+
+.day_posts {
+	background: #c0c0ff;
+	margin:2% 0%;
+	padding: 2%;
+}
+
+.single_post {
+	margin: 2%;
+	background:#d0d0ff;
+	word-wrap:break-word;
+}
+
+input.error_form, textarea.error_form {
+	border-color:#ff0000;
+}
+
+div.error_form {
+	color : #ff0000;
+}
+form.invis{
+	display:none;
+}
+
+[type="button"].refr_button {
+	margin-left: 2%;
+}
